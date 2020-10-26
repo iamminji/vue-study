@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>{{ text }}</h1>
+        <p>{{ text }}</p>
+        <input v-model="message">
         <button v-on:click="btnClick" id="wow">클릭</button>
     </div>
 </template>
@@ -14,7 +15,7 @@
         },
         methods: {
             btnClick: function () {
-                this.text = "버튼 누름!";
+                this.text = this.message;
             }
         }
     }
