@@ -1,8 +1,10 @@
 <template>
-    <div>
+    <div id="app">
         <p>{{ text }}</p>
-        <input v-model="message">
-        <button v-on:click="btnClick" id="wow">클릭</button>
+        <label>
+            <input v-model="message">
+        </label>
+        <button class="btn btn-primary" v-on:click="btnClick" id="wow">클릭</button>
     </div>
 </template>
 
